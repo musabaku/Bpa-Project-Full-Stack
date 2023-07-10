@@ -1,0 +1,42 @@
+.container-stats{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2.5vmax;
+  position: relative;
+}
+
+.stats-number{
+  font: 300 4vmax "Roboto";
+  color: rgba(0, 0, 0, 0.747);
+}
+
+.stats-text{
+  font: 300 1vmax "Roboto";
+  text-align: center;
+  color: rgb(81, 46, 145);
+margin-top: 1vmax;
+
+}
+.margin-r{
+  margin-left: 2vmax;
+}
+
+.container-stats::before,
+.container-stats::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px; /* Adjust the size of the shape as needed */
+  background-color: rgba(255, 0, 0, 0.815); /* Change the color as desired */
+}
+
+.container-stats::before {
+  left: 0;
+  background: linear-gradient(to bottom, #ff0000, #ff8888); /* Red gradient */
+}
+
+.container-stats::after {
+  right: 0;
+  background: linear-gradient(to bottom, #0000ff, #8888ff); /* Blue gradient */
+}

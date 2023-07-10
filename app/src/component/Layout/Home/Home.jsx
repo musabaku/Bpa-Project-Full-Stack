@@ -9,6 +9,9 @@ import slider4 from '../../../images/slider4.JPG';
 import "./Home.css"
 import TCshort from "./TCshort"
 import TopProperty from "./TopProperty"
+import CountStats from "./CountStats"
+import AboutShort from "./AboutShort"
+
 
 const sliders = [
 { src: slider1, alt: "Slider 1" },
@@ -41,6 +44,8 @@ return (<Fragment>
 </div>
 <TopProperty />
 <TCshort />
+<CountStats/>
+<AboutShort/>
 </Fragment>
 )
 }
