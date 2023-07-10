@@ -1,5 +1,7 @@
 import React, { Fragment } from 'react';
 import './AboutShort.css';
+import bestPrice from '../../../images/About/bestPrice.JPG';
+
 const AboutShort = () => {
   return (
     <Fragment>
@@ -16,20 +18,44 @@ const AboutShort = () => {
             in becoming homeowners. Our commitment to professionalism, customer
             satisfaction, and personalized service sets us apart. We prioritize
             building long-term relationships, offering support and guidance
-            throughout the sales process. Trust Big Property Agency for a
-            reliable and rewarding real estate experience, with the best prices
-            and minimized risks. Choose us as your trusted partner in achieving
-            your real estate goals.
+            throughout the sales process.
           </p>
         </div>
+        <div className="about-logo-box">
         <div class="box-container">
-          <img src="logo.png" alt="Logo" class="logo" />
+          <img src={bestPrice} alt="Logo" class="logo" />
           <div class="content">
             <p class="text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
         </div>
+        <div class="box-container">
+          <img src={bestPrice} alt="Logo" class="logo" />
+          <div class="content">
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="box-container">
+          <img src={bestPrice} alt="Logo" class="logo" />
+          <div class="content">
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="box-container">
+          <img src={bestPrice} alt="Logo" class="logo" />
+          <div class="content">
+            <p class="text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        </div>
+
       </div>
     </Fragment>
   );
