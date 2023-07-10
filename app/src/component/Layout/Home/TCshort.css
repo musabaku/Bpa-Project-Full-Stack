@@ -1,0 +1,49 @@
+.image > img{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+.image{
+  margin-top: 2vmax;
+  margin-bottom: 2vmax;
+
+}
+.text-image{
+  display: flex;
+  flex-direction: column;
+  background-color: #E6E6E6;
+  align-items: center;
+  
+}
+.container{
+  background-color: #E6E6E6;
+height: 72vh;
+}
+.text-image >h2 {
+font: 400 1.5vmax;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin-bottom: 2vmax;
+}
+
+.p-tc{
+font: 300 1.2vmax "Roboto";
+text-align: center;
+  width: 50%;
+margin-bottom: 2vmax;
+}
+
+.ptc{
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn-ptc{
+  border: none;
+  background-color: #d51730;
+
+  color: white;
+  width: 150px;
+  height: 40px;
+}

@@ -1,0 +1,42 @@
+.slider {
+  width: 100% !important; 
+  height: 30vh;
+  margin-bottom: 10vmax;
+}
+
+.slider img {
+  width: 100%;
+  height: 40vh;
+  
+}
+.slick-prev,
+.slick-next {
+  display: none;
+}
+/* Darken the previous and next arrows */
+.slick-prev,
+.slick-next {
+  color: #000; /* Set the desired dark color */
+}
+/* Move the previous and next arrows inside the slider picture */
+/* Move the previous and next arrows inside the slider picture */
+/* Move the previous and next arrows inside the slider picture */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: white;
+  padding: 5px;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+

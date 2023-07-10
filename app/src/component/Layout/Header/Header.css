@@ -1,0 +1,56 @@
+.container-header {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.container-header > .header-text > ul {
+  display: flex;
+  list-style: none;
+  font: 300 1.5vmax;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  color: #363636;
+  margin: 0;
+  padding: 0;
+}
+
+.container-header > .header-text > ul > .header-item {
+  padding: 0.5vmax;
+  margin: 0 2vmax;
+}
+.container-header > .header-image {
+  margin-left: 4vmax;
+}
+.container-header > .header-image > img {
+  width: 10vmax;
+}
+.top-header{
+  background-color: #d51730;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.box1{
+  display: flex;
+  justify-content: space-evenly;
+  font: 300 0.7vmax "Roboto";
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 2.5vmax;
+}
+.box1 > p {
+  margin: 0 3vmax;
+}
+.box2{
+  padding: 0.5vmax;
+}
+.box2 > span{
+margin: 1vmax;
+}

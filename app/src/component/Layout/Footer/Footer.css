@@ -1,0 +1,18 @@
+.bpa-footer{
+  background-color: black;
+  width: 100%;
+  height: 5vmax;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+.bpa-footer > .header-image {
+  margin-left: 4vmax;
+}
+.bpa-footer > .header-image > img {
+  width: 7vmax;
+}
+.footer-text{
+  margin-right: 15vmax;
+}

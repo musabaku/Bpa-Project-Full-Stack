@@ -1,0 +1,84 @@
+.popular-property {
+  margin: 1vmax;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.322);
+  height: 38vmax;
+  width: 18vmax;
+  border-radius: 10px;
+  background-color: beige;
+
+}
+.big-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.popular-property > img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+
+}
+
+.property-details {
+  padding: 0.5vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 45.5%;
+  background-color: beige;
+}
+
+.property-details h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5vmax;
+  color: rgba(0, 0, 0, 0.801);
+}
+
+.property-details span {
+  font-weight: bold;
+  color: rgb(81, 46, 145);
+  margin: 0.5vmax 0;
+}
+
+.property-details p {
+  font-size: 0.8rem;
+  color: rgba(8, 8, 8, 0.822);
+  margin: 0.5vmax 0;
+
+}
+
+.property-features {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  color: rgb(85, 85, 85);
+  border-top: 1px solid #ddd;
+  padding: 0 0.5vmax;
+}
+
+.property-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5vmax;
+}
+
+.icon {
+  margin-right: 0.5vmax;
+}
+
+.feature-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
