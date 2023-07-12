@@ -13,12 +13,16 @@
   list-style: none;
   font: 300 1.5vmax;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: none;
   
   color: #363636;
   margin: 0;
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
 .container-header > .header-text > ul > .header-item {
   padding: 0.5vmax;
   margin: 0 2vmax;

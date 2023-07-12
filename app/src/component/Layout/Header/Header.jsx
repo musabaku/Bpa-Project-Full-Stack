@@ -7,8 +7,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-
-
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -41,13 +40,13 @@ const Header = () => {
         </div>
         <div className="header-text">
           <ul>
-            <li className="header-item">Home</li>
-            <li className="header-item">About</li>
-            <li className="header-item">Services</li>
-            <li className="header-item">Turkish Citizenship</li>
-            <li className="header-item">Properties</li>
-            <li className="header-item">Blog</li>
-            <li className="header-item">Contact Us</li>
+            <li className="header-item"><Link to="/">Home</Link></li>
+            <li className="header-item"><Link to="/about">About</Link></li>
+            <li className="header-item"><Link to="/services">Services</Link></li>
+            <li className="header-item"><Link to="/tc">Turkish Citizenship</Link></li>
+            <li className="header-item"><Link to="/properties">Properties</Link></li>
+            <li className="header-item"><Link to="/blog">Blog</Link></li>
+            <li className="header-item"><Link to="/contact-us">Contact Us</Link></li>
           </ul>
         </div>
       </div>

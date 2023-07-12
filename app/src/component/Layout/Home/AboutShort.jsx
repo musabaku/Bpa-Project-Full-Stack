@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import './AboutShort.css';
 import bestPrice from '../../../images/About/bestPrice.JPG';
-
 const AboutShort = () => {
   return (
     <Fragment>
@@ -11,7 +10,7 @@ const AboutShort = () => {
         </div>
         <div className="about-text">
           <p>
-            Big Property Agency is a trusted and experienced real estate company
+          Big Property Agency is a trusted and experienced real estate company
             in Turkey, serving clients for over 12 years. With sales offices
             strategically located in Istanbul and a dedicated team fluent in
             multiple languages, we have successfully assisted 1900+ individuals
@@ -22,40 +21,45 @@ const AboutShort = () => {
           </p>
         </div>
         <div className="about-logo-box">
-        <div class="box-container">
-          <img src={bestPrice} alt="Logo" class="logo" />
-          <div class="content">
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
+          <div className="box-container">
+            <img src={bestPrice} alt="Logo" className="logo" />
+            <div className="content">
+              <h3>Extensive Product Selection</h3>
+              <p className="text">
+              Discover a wide variety of products across multiple categories for all your shopping needs.</p>
+            </div>
           </div>
-        </div>
-        <div class="box-container">
-          <img src={bestPrice} alt="Logo" class="logo" />
-          <div class="content">
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </div>
-        </div>
-        <div class="box-container">
-          <img src={bestPrice} alt="Logo" class="logo" />
-          <div class="content">
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </div>
-        </div>
-        <div class="box-container">
-          <img src={bestPrice} alt="Logo" class="logo" />
-          <div class="content">
-            <p class="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </div>
-        </div>
-        </div>
+          <div className="box-container">
+            <img src={bestPrice} alt="Logo" className="logo" />
+            <div className="content">
+              <h3>User-Friendly Experience</h3>
 
+              <p className="text">
+              Enjoy a seamless and intuitive shopping experience with our easy-to-use website.
+              </p>
+            </div>
+          </div>
+          <div className="box-container">
+            <img src={bestPrice} alt="Logo" className="logo" />
+            <div className="content">
+              <h3>Quality Assurance</h3>
+
+              <p className="text">
+              Rest assured, our products meet the highest standards of quality and durability.
+              </p>
+            </div>
+          </div>
+          <div className="box-container">
+            <img src={bestPrice} alt="Logo" className="logo" />
+            <div className="content">
+              <h3>Outstanding Customer Support</h3>
+
+              <p className="text">
+              Our friendly support team is always ready to assist you with any questions or concerns.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </Fragment>
   );

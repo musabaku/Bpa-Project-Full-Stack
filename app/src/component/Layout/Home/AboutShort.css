@@ -1,47 +1,67 @@
-.box-container {
-  width: 200px;
-  height: 200px;
-  background-color: #f2f2f2; /* Replace with desired background color */
-  border: 2px solid #ccc; /* Replace with desired border color */
-  border-radius: 10px;
+.about-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding: 2rem;
+  background-color: #ffffff;
+  color: #410954;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  text-align: center;
+  font: 400 1.5vmax;
+margin-bottom: 2vmax;
+width: 70%;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about-logo-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #E6E6E6;
+   color: blue;
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.575);
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1vmax;
+  margin: 1vmax;
+  text-align: center;
+  width: 40%;
+  height: 20%;
 }
 
 .logo {
   width: 80px;
   height: 80px;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 
-.content {
-  text-align: center;
-}
 
-.text {
-  font-size: 14px;
-  color: #333; /* Replace with desired text color */
-}
 
-.about-logo-box{
-  display: flex;
-  justify-content: space-evenly;
-}
-.about-container{
-  height: 60vh;
-  padding: 3vmax;
-}
-.about-heading{
-  text-align: center;
-  margin-bottom: 1vmax;
-}
-.about-text{
-  text-align: center;
-  width: 70%;
-  margin: auto;
-  margin-top: 2vmax;
+.box-container> .content >.text{
+  font-size: 1.5vmax;
+  color: black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-  margin-bottom: 3vmax;
+}
+.box-container> .content >h3{
+  color: red;
+  margin: 1.5vmax 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
