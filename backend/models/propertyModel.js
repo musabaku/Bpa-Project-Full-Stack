@@ -6,16 +6,16 @@ const propertySchema = new mongoose.Schema({
     required:true,
   },
   image:{
-    url{
+    url:{
     type:String,
     required:true,
     }
   },
-  name:{
-    type:String,
+  price:{
+    type:Number,
     required:true,
   },
-  name:{
+  location:{
     type:String,
     required:true,
   },
