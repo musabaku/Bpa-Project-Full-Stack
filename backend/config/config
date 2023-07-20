@@ -1,2 +1,5 @@
 PORT=4000
 DB_URI = "mongodb://0.0.0.0:27017/Ecommerce"
+
+JWT_SECRET =ajksn2113jkdsdscn
+JWT_EXPIRE = 50
