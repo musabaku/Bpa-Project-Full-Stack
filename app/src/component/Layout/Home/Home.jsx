@@ -1,53 +1,41 @@
-import React,{Fragment} from 'react'
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import Slider from 'react-slick';
-import slider1 from '../../../images/Slider/slider1.JPG';
-import slider2 from '../../../images/Slider/slider2.JPG';
-import slider3 from '../../../images/Slider/slider3.JPG';
-import slider4 from '../../../images/Slider/slider4.JPG';
-import "./Home.css"
-import TCshort from "./TCshort"
-import TopProperty from "./TopProperty"
-import CountStats from "./CountStats"
-import AboutShort from "./AboutShort"
-
-
-const sliders = [
-{ src: slider1, alt: "Slider 1" },
-{ src: slider2, alt: "Slider 2" },
-{ src: slider3, alt: "Slider 3" },
-{ src: slider4, alt: "Slider 4" },
-
-];
-
-const settings = {
-dots: true,
-infinite: true,
-speed: 200,
-slidesToShow: 1,
-slidesToScroll: 1,
-autoplay: true,
-}
+import React, { Fragment } from 'react';
+import './Home.css';
+import TCshort from './TCshort';
+import TopProperty from './TopProperty';
+import CountStats from './CountStats';
+import AboutShort from './AboutShort';
+import RecentBlog from './RecentBlog.jsx';
+import turkish from '../../../images/turkciti.JPG';
 
 const Home = () => {
-return (<Fragment>
+  return (
+    <Fragment>
+      <div>
+      <div className="main-box">
+        <div className="header-text1">
+          <h1>Welcome to Big Property Agency</h1>
+          <p>Discover a World of Amazing Products</p>
+          <a href="/products" className="explore-button">
+            Explore Now
+          </a>
+        </div>
+        
 
-<div className="slider">
-<Slider {...settings}>
-{sliders.map((slider, index) => (
-<div key={index}>
-<img src={slider.src} alt={slider.alt} />
-</div>
-))}
-</Slider>
-</div>
-<TopProperty />
-<TCshort />
-<CountStats/>
-<AboutShort/>
-</Fragment>
-)
-}
+        <div className="header-image1">
+          <img src={turkish} alt="Logo" />
+        </div>
+      </div>
+      </div>
 
-export default Home
+
+      <TopProperty />
+      <TCshort />
+
+      <AboutShort />
+      <CountStats />
+      <RecentBlog />
+    </Fragment>
+  );
+};
+
+export default Home;
