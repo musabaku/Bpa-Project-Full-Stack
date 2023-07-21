@@ -11,7 +11,7 @@ exports.getAllBlog = catchAsyncErrors(async(req,res,next)=>{
 })
 exports.getBlogDetails = catchAsyncErrors(async(req,res,next)=>{
   
-  const blogs = await Blog.find(req.params.id)
+  const blogs = await Blog.findById(req.params.id)
 
   res.status(200).json({
     success:true,
@@ -25,7 +25,7 @@ exports.updateBlog = catchAsyncErrors(async(req,res,next)=>{
     return next(new ErrorHandler("Blog not found", 404));
   }
 
-  blog = await Blog.findByIdAndUpdate(req.params.id, req.body, {
+  blog = await Blog.findByIdAndUpdate({ _id: req.params.id }, req.body, {
     new: true,
     runValidators: true,
     useFindAndModify: true,
@@ -33,15 +33,18 @@ exports.updateBlog = catchAsyncErrors(async(req,res,next)=>{
 
   res.status(201).json({
     success: true,
-    product,
+    blog,
   });
 })
 exports.deleteBlog = catchAsyncErrors(async(req,res,next)=>{
-  const blogs = await Blog.findByIdAndDelete(req.params.id)
+  const blog = await Blog.findByIdAndDelete(req.params.id);
 
+  if (!blog) {
+    return next(new ErrorHandler("Blog not found", 404));
+  }
   res.status(200).json({
     success:true,
-    blogs
+    
   })
 })
 

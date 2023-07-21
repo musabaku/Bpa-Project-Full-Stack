@@ -1,11 +1,11 @@
 import React,{Fragment} from 'react'
 import "./TopProperty.css"
-import PropertyDetails from "./PropertyDetails"
+import PropertyCard from "./PropertyCard"
 const TopProperty = () => {
   return (<Fragment>
     <div className="container-tp">
       <h1>Popular Properties</h1>
-     <PropertyDetails/>
+     <PropertyCard/>
     </div>
     </Fragment>
   )

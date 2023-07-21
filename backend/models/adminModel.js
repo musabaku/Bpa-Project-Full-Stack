@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const JWT = require('jsonwebtoken');
 const adminSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
@@ -13,12 +13,22 @@ const adminSchema = new mongoose.Schema({
   },
 });
 
-adminSchema.methods.comparePassword = function (enteredPassword) {
-  return bcrypt.compare(enteredPassword, this.password);
+adminSchema.methods.comparePassword = async function (enteredPassword) {
+  try {
+    return await bcrypt.compare(enteredPassword, this.password);
+  } catch (error) {
+    return false;
+  }
 };
-
 adminSchema.pre('save', async function (next) {
-  this.password = bcrypt.hash(this.password, 10);
+  try {
+    const salt = await bcrypt.genSalt(10);
+
+    this.password = await bcrypt.hash(this.password, salt);
+    next();
+  } catch (error) {
+    next(error);
+  }
 });
 
 adminSchema.methods.getJWTToken = function () {

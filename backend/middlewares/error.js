@@ -1,4 +1,4 @@
-const ErrorHandler = require("../utils/ErrorHandler.js")
+const ErrorHandler = require("../utils/errorHandler.js")
 
 const error =(err,req,res,next)=>{
 
