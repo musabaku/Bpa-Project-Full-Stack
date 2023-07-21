@@ -4,11 +4,7 @@ const mongoose = require("mongoose")
 const connectDataBase= ()=>{
 console.log("3")
 
-  mongoose.connect((process.env.MONGO_URI),{
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-
-}).then(() => {
+  mongoose.connect(process.env.MONGO_URI).then(() => {
     console.log("4")
     console.log(`Connected to MongoDB successfully`)
 }).catch((err) => {
