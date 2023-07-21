@@ -4,7 +4,11 @@ import TCshort from './TCshort';
 // import TopProperty from './TopProperty';
 import CountStats from './CountStats';
 import AboutShort from './AboutShort';
-import RecentBlog from './RecentBlog.jsx';
+// import RecentBlog from './RecentBlog.jsx';
+import BlogCard from './BlogCard.jsx';
+
+import PropertyCard from './PropertyCard.jsx';
+
 import turkish from '../../../images/turkciti.JPG';
 import big1 from "../../../images/Popular/big1.jpg"
 import big2 from "../../../images/Popular/big2.jpg"
@@ -15,6 +19,26 @@ import big6 from "../../../images/Popular/big6.jpeg"
 import big7 from "../../../images/Popular/big7.jpg"
 import big8 from "../../../images/Popular/big8.jpg"
 
+const data = [
+  {
+    image: 'https://images.unsplash.com/photo-1593642532400-2682810df593',
+    title: 'Top Cities for Profitable Real Estate Investment in Turkey',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1593642532400-2682810df593',
+    title: 'Exploring Turkey’s Booming Real Estate Market',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1593642532400-2682810df593',
+    title: 'Impact of Changing Mortgage Interest Rates on Turkey’s Property Market',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1593642532400-2682810df593',
+    title: 'Notaries Take the Lead: A New Era in Real Estate Transactions',
+  },
+
+  // Add more data objects as needed
+];
 const obj = {
   src: [big1, big2, big3, big4, big5, big6,big7,big8],
   name: [
@@ -73,7 +97,7 @@ const Home = () => {
 
       <AboutShort />
       <CountStats />
-      <RecentBlog />
+      <BlogCard data={data} />
     </Fragment>
   );
 };

@@ -1,0 +1,77 @@
+.buy-property-h1{
+  color: #007bff; /* Change this to your desired link color */
+  text-decoration: none;
+}
+/* Services.css */
+
+.services {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-card {
+  max-width: 250px;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: #007bff; /* Change this to your desired icon color */
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+}
+.guide-services {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.guide-services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.guide-container{
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  padding: 2vmax;
+  margin: 0 auto;
+}
+
+
+
+/* Add media queries to adjust styles for different screen sizes */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    margin-bottom: 20px;
+  }
+}
