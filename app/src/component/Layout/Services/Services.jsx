@@ -49,15 +49,29 @@ const Services = () => {
             </div>
           ))}
         </div>
+        <div className="bouncing-dots">
+        {servicesData.map((_, index) => (
+          <span className="dot" style={{ '--dot-index': index }} key={index}></span>
+        ))}
+      </div>
       </div>
       <div className="guide-services">
         <h2>
-          <RiBookOpenFill style={{ marginRight: '10px' }} /> Comprehensive Guide to Our Services
+          <RiBookOpenFill style={{ marginRight: '10px',color:'blue' }} /> Comprehensive Guide to Our Services
         </h2>
       </div>
       <div className="guide-container">
             <Link className="buy-property-h1" to="/services/buyProperty">
-              <h1><RiCheckboxCircleFill />Buying Property in Turkey: Legal Procedures</h1>
+              <h3><RiCheckboxCircleFill style={{ marginRight: '10px' , color : 'green' }}/>Buying Property in Turkey: Legal Procedures</h3>
+            </Link>
+            <Link className="buy-property-h1" to="/services/buyProperty">
+              <h3><RiCheckboxCircleFill style={{ marginRight: '10px' , color : 'green' }}/>Streamlined Property Management in Turkey: An Overview</h3>
+            </Link>
+            <Link className="buy-property-h1" to="/services/buyProperty">
+              <h3><RiCheckboxCircleFill style={{ marginRight: '10px' , color : 'green' }}/>Premium Resale Properties in Turkey: Your Ideal Investment</h3>
+            </Link>
+            <Link className="buy-property-h1" to="/services/buyProperty">
+              <h3><RiCheckboxCircleFill style={{ marginRight: '10px' , color : 'green' }}/>Discover Prime Properties in Turkey: Best Prices Guaranteed</h3>
             </Link>
        
       </div>

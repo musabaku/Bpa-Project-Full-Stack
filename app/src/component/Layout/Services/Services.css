@@ -1,38 +1,79 @@
-.buy-property-h1{
-  color: #007bff; /* Change this to your desired link color */
+.buy-property-h1 {
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 /* Services.css */
+
 
 .services {
   text-align: center;
   padding: 40px 0;
+  height: 60vh;
+  background: rgb(2,0,36);
+  background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(9,43,121,1) 44%, rgba(0,212,255,1) 100%);
+  
 }
-
+.buy-property-h1:hover {
+  color: green;
+}
 .services h2 {
   font-size: 2.5rem;
   margin-bottom: 30px;
+  color: white;
+}
+@keyframes bouncingDots {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
+.bouncing-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.2vmax;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: yellow;
+  /* border-radius: 50%; */
+  margin: 0 5px;
+  animation: bouncingDots 1.5s infinite;
+  animation-delay: calc(0.2s * var(--dot-index))
+}
 .services-container {
   display: flex;
   justify-content: center;
   gap: 30px;
+  color: white;
+
 }
 
 .service-card {
   max-width: 250px;
   padding: 20px;
-  border: 1px solid #eaeaea;
+  border: 1px solid;
+    border-color: rgb(0, 212, 255);
   border-radius: 5px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+.service-card:hover {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .service-icon {
   font-size: 3rem;
-  color: #007bff; /* Change this to your desired icon color */
   margin-bottom: 15px;
+  color: yellow;
 }
 
 .service-card h3 {
@@ -42,28 +83,39 @@
 
 .service-card p {
   font-size: 1rem;
-  color: #555;
+  color: yellow;
+
 }
 .guide-services {
   text-align: center;
-  padding: 40px 0;
+  padding: 1vmax;
 }
 
 .guide-services h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+  font: 700 2.5vmax 'Roboto';
+  margin-bottom: 0.5vmax;
+  color: rgba(0, 0, 0, 0.788);
+  border-bottom: 2px solid black;
+  padding-bottom: 0.5vmax; 
 }
 
-.guide-container{
+.guide-container {
   width: 70vw;
   display: flex;
   flex-direction: column;
-  padding: 2vmax;
-  margin: 0 auto;
+  margin-left: 3vmax;
 }
-
-
-
+.guide-container h3 {
+  font: 500 1.7vmax 'Roboto';
+  margin: 1vmax 0;
+  color: black;
+  transition: color 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+.guide-container h3:hover {
+color: green;
+}
 /* Add media queries to adjust styles for different screen sizes */
 @media (max-width: 768px) {
   .services-container {
